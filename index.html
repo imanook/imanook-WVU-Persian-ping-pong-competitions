@@ -1,0 +1,159 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persian Ping-Pong Competition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Persian Ping-Pong Competition</h1>
+    <p>Join us for a fun-filled ping-pong event!</p>
+  </header>
+
+  <div class="image-container">
+    <img src="images/picture-on-top.jpg" alt="Picture on Top" class="picture-on-top">
+    <img src="images/image4.jpg" alt="" class="custom-image">
+  </div>
+
+  <main>
+    <img src="images/background-image.jpg" alt="" class="wvu-image">
+    <section>
+      <h2>Event Information</h2>
+      <p>Date: 12 August and 13 August</p>
+      <p>Time: 4:00 pm to 7:00 pm (both days)</p>
+      <p>Location: WVU Rec Center</p>
+      <p>Description: Persian Ping-Pong Competition</p>
+    </section>
+
+    <section>
+      <h2>Registration</h2>
+      <form id="registrationForm" action="https://paypal.me/imanook?country.x=US&locale.x=en_US" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Add hidden fields for payment verification -->
+        <input type="hidden" name="amount" value="5.00">
+        <input type="hidden" name="item_name" value="Ping-Pong Entry Fee">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="thank-you.html">
+        <input type="hidden" name="cancel_return" value="payment-failed.html">
+
+        <button type="submit" class="register-button">Register & Pay $5</button>
+      </form>
+    </section>
+
+    <!-- Zelle Payment Instructions -->
+    <section>
+      <h2>Alternative Payment Option</h2>
+      <p>If you don't have PayPal, you can still register as a conditional participant by sending $5 to the admin's Zelle account at (907) 799-9370.</p>
+      <p>Please enter your full name as the transaction memo when making the payment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:imanoraki@gmail.com">imanoraki@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const registrationForm = document.getElementById("registrationForm");
+
+    registrationForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Thank you for registering! Please proceed to PayPal for payment.");
+      event.target.submit(); // Submit the form to PayPal
+    });
+  </script>
+</body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persian Ping-Pong Competition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Persian Ping-Pong Competition</h1>
+    <p>Join us for a fun-filled ping-pong event!</p>
+  </header>
+
+  <div class="image-container">
+    <img src="images/picture-on-top.jpg" alt="Picture on Top" class="picture-on-top">
+    <img src="images/image4.jpg" alt="" class="custom-image">
+  </div>
+
+  <main>
+    <img src="images/background-image.jpg" alt="" class="wvu-image">
+    <section>
+      <h2>Event Information</h2>
+      <p>Date: 12 August and 13 August</p>
+      <p>Time: 4:00 pm to 7:00 pm (both days)</p>
+      <p>Location: WVU Rec Center</p>
+      <p>Description: Persian Ping-Pong Competition</p>
+    </section>
+
+    <section>
+      <h2>Registration</h2>
+      <form id="registrationForm" action="https://paypal.me/imanook?country.x=US&locale.x=en_US" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Add hidden fields for payment verification -->
+        <input type="hidden" name="amount" value="5.00">
+        <input type="hidden" name="item_name" value="Ping-Pong Entry Fee">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="thank-you.html">
+        <input type="hidden" name="cancel_return" value="payment-failed.html">
+
+        <button type="submit" class="register-button">Register & Pay $5</button>
+      </form>
+    </section>
+
+    <!-- Zelle Payment Instructions -->
+    <section>
+      <h2>Alternative Payment Option</h2>
+      <p>If you don't have PayPal, you can still register as a conditional participant by sending $5 to the admin's Zelle account at (907) 799-9370.</p>
+      <p>Please enter your full name as the transaction memo when making the payment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:imanoraki@gmail.com">imanoraki@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const registrationForm = document.getElementById("registrationForm");
+
+    registrationForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Thank you for registering! Please proceed to PayPal for payment.");
+      event.target.submit(); // Submit the form to PayPal
+    });
+  </script>
+</body>
+
+</html>
+>>>>>>> 74388636945c5b2d55d8b4d0e9f103208bd94826
